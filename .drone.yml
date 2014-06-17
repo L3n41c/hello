@@ -1,0 +1,8 @@
+image: haskell
+git:
+  depth: 1
+script:
+  - cabal install --only-dependencies --enable-tests
+  - cabal configure --enable-tests
+  - cabal build
+  - cabal test
